@@ -1,0 +1,285 @@
+body{
+	background:beige;
+}
+
+header {
+    background: linear-gradient(to right, #ff0000, #cc0000); /* Gradient Red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Bar */
+nav {
+    background: #222;
+    padding: 10px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Regular Nav Links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover Effect for Normal Links */
+nav ul li a:hover {
+    background: red;
+    color: white;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    color: #e74c3c;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    color: #bdc3c7;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #34495e;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background: #e74c3c;
+    color: #fff;
+    padding-left: 10px;
+}
+
+
+.dashboard-container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Dashboard Cards Styling */
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Card Style */
+.card {
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Colors for each card */
+.blue { background: #3498db; }
+.green { background: #2ecc71; }
+.red { background: #e74c3c; }
+
+/* Text Styling */
+.card h2 {
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+.card p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.card a {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Notification Panel Styling */
+.notification-panel {
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+}
+
+.notification-panel h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #d32f2f;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.notification-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.notification-item .time {
+    font-size: 12px;
+    color: #777;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Optional: Hover Effect */
+.notification-item:hover {
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+/* Recent Matches Section */
+.recent-matches {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.recent-matches h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.matches-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.match-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.match-header {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+}
+
+.match-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.match-body {
+    padding: 15px;
+}
+
+.patient-info, .donor-info {
+    margin-bottom: 15px;
+}
+
+.patient-info h4, .donor-info h4 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.patient-info p, .donor-info p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.no-matches {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-style: italic;
+}
+

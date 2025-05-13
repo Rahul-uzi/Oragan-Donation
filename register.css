@@ -1,0 +1,135 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 20px;
+	 padding-top: 40px;
+}
+
+/* Header Styling */
+.header {
+    background-color: #d32f2f;
+    padding: 15px;
+    color: white;
+    text-align: left;
+    font-size: 26px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Container Styling */
+.container {
+    max-width: 900px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Heading */
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input Fields Styling */
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #d32f2f;
+    box-shadow: 0px 0px 8px rgba(211, 47, 47, 0.3);
+}
+
+/* Select Dropdown Styling */
+.form-select {
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #d32f2f;
+    box-shadow: 0px 0px 8px rgba(211, 47, 47, 0.3);
+}
+
+/* Submit Button Styling */
+.btn-danger {
+    background-color: #d32f2f;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-danger:hover {
+    background-color: #b71c1c;
+    transform: scale(1.05);
+}
+.navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background:red; /* Gradient Background */
+            padding: 10px 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000; /* Ensure it's on top */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .navbar-brand {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .navbar-nav li {
+            margin: 0 15px;
+        }
+
+        .navbar-nav a {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar-nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }

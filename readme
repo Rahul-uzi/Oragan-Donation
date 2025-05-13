@@ -1,0 +1,89 @@
+# DonorSpot
+
+DonorSpot is a web application designed to connect organ donors with patients in need of transplants. This application allows users to register as donors or patients, and it facilitates the process of matching donors with patients based on their organ needs.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [How to Run](#how-to-run)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- User registration for both donors and patients.
+- Admin login to manage notifications and view matches.
+- Email notifications sent to patients when a potential donor is found.
+- Responsive design for better user experience.
+
+## Technologies Used
+
+- PHP
+- MySQL
+- HTML/CSS
+- JavaScript
+- PHPMailer for sending emails
+- Bootstrap for styling
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd donor-spot
+   ```
+
+2. **Set up XAMPP**:
+   - Download and install [XAMPP](https://www.apachefriends.org/index.html).
+   - Start the Apache and MySQL modules from the XAMPP Control Panel.
+
+3. **Create the database**:
+   - Open phpMyAdmin (usually at `http://localhost/phpmyadmin`).
+   - Create a new database named `donorspot`.
+   - Import the SQL file (if available) to create the necessary tables.
+
+4. **Configure database connection**:
+   - Update the database connection details in `all_notifications.php` if necessary.
+
+5. **Install Composer** (if not already installed):
+   - Download Composer from [getcomposer.org](https://getcomposer.org/download/).
+   - Run the following command in your project directory to install PHPMailer:
+     ```bash
+     composer require phpmailer/phpmailer
+     ```
+
+## Usage
+
+1. **Access the application**:
+   - Open your web browser and navigate to `http://localhost/odzip/index.php`.
+
+2. **Register as a donor or patient**:
+   - Use the registration forms available on the site.
+
+3. **Admin Login**:
+   - Access the admin login page at `http://localhost/odzip/adminlogin.php` to manage notifications.
+
+4. **Send Notifications**:
+   - The admin can send email notifications to patients when a potential donor is found.
+
+## File Structure
+
+
+## How to Run
+
+1. Ensure that XAMPP is running with Apache and MySQL.
+2. Open your web browser and navigate to `http://localhost/odzip/index.php`.
+3. Follow the prompts to register as a donor or patient, or log in as an admin.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
